@@ -1,0 +1,71 @@
+.note-editor {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .note-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+  }
+  
+  .note-title-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .note-content-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+  }
+  
+  .add-note-btn {
+    padding: 12px 24px;
+    background: #40c057;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .add-note-btn:hover {
+    background: #37b24d;
+  }
+  
+  .notes-list {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .note-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .note-card h3 {
+    margin-top: 0;
+    color: #343a40;
+  }
+  
+  .note-card p {
+    color: #495057;
+    line-height: 1.6;
+  }
+  
+  .note-card small {
+    color: #868e96;
+    font-size: 12px;
+  }
