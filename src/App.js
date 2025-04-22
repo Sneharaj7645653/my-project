@@ -5,6 +5,8 @@ import QuizGenerator from './components/QuizGenerator/QuizGenerator';
 import NoteEditor from './components/NoteEditor/NoteEditor';
 import Timer from './components/Timer/Timer';
 
+
+console.log("API Key:", process.env.REACT_APP_OPENAI_KEY ? "Loaded" : "Missing");
 function App() {
   return (
     <Router>
