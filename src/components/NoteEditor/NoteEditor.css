@@ -2,6 +2,7 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .note-title-input {
@@ -33,6 +34,11 @@
     cursor: pointer;
     font-size: 16px;
     margin-right: 10px;
+    transition: background 0.3s;
+  }
+  
+  .save-btn:hover {
+    background: #45a049;
   }
   
   .cancel-btn {
@@ -43,6 +49,11 @@
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .cancel-btn:hover {
+    background: #d32f2f;
   }
   
   .notes-list {
@@ -52,7 +63,9 @@
   .empty-notes {
     text-align: center;
     color: #666;
-    padding: 20px;
+    padding: 40px 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
   }
   
   .note-card {
@@ -70,6 +83,11 @@
     margin-bottom: 10px;
   }
   
+  .note-header h3 {
+    margin: 0;
+    color: #2c3e50;
+  }
+  
   .note-actions {
     display: flex;
     gap: 10px;
@@ -82,6 +100,11 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .edit-btn:hover {
+    background: #0b7dda;
   }
   
   .delete-btn {
@@ -91,13 +114,35 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background 0.3s;
   }
   
-  .note-card p {
+  .delete-btn:hover {
+    background: #d32f2f;
+  }
+  
+  .note-content {
     white-space: pre-wrap;
+    line-height: 1.6;
     margin-bottom: 10px;
   }
   
-  .note-card small {
-    color: #777;
+  .note-dates {
+    color: #7f8c8d;
+    font-size: 0.85rem;
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+  }
+  
+  @media (max-width: 600px) {
+    .note-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    
+    .note-actions {
+      width: 100%;
+      justify-content: flex-end;
+    }
   }
