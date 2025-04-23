@@ -5,10 +5,9 @@ import QuizGenerator from './components/QuizGenerator/QuizGenerator';
 import NoteEditor from './components/NoteEditor/NoteEditor';
 import Timer from './components/Timer/Timer';
 
-
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="app">
         <aside className="sidebar">
           <div className="sidebar-header">
