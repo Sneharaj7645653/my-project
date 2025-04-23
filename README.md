@@ -1,6 +1,6 @@
 # Study Assistant App
 
-![App Screenshot](./public/screenshot.png) <!-- Add your own screenshot -->
+
 
 A comprehensive study companion featuring:
 - Quiz generator with multiple categories
@@ -41,6 +41,15 @@ A comprehensive study companion featuring:
 - **State Management**: Context API
 - **API**: Open Trivia DB
 - **Deployment**: Vercel/Netlify
+
+## 🛠 Tech Stack
+
+- **Frontend**: React · React Router · CSS  
+- **State**: Context API  
+- **API**: Axios · Open Trivia DB  
+- **Tools**: Git  
+- **Hosting**: Netlify
+
 
 ## Installation
 
