@@ -14,10 +14,31 @@ function App() {
             <h2>Study Assistant</h2>
           </div>
           <nav>
-            <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Dashboard</NavLink>
-            <NavLink to="/quiz" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Quiz Generator</NavLink>
-            <NavLink to="/notes" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Notes</NavLink>
-            <NavLink to="/timer" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Timer</NavLink>
+            <NavLink 
+              to="/" 
+              end  // Add 'end' prop for exact matching of root route
+              className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+            >
+              Dashboard
+            </NavLink>
+            <NavLink 
+              to="/quiz" 
+              className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+            >
+              Quiz Generator
+            </NavLink>
+            <NavLink 
+              to="/notes" 
+              className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+            >
+              Notes
+            </NavLink>
+            <NavLink 
+              to="/timer" 
+              className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+            >
+              Timer
+            </NavLink>
           </nav>
         </aside>
         <main className="main-content">
@@ -26,6 +47,8 @@ function App() {
             <Route path="/quiz" element={<QuizGenerator />} />
             <Route path="/notes" element={<NoteEditor />} />
             <Route path="/timer" element={<Timer />} />
+            {/* Add a catch-all route for 404 errors if needed */}
+            <Route path="*" element={<Dashboard />} />
           </Routes>
         </main>
       </div>
